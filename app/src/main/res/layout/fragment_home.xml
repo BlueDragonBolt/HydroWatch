@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressIndicatorWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="2000"
+        android:orientation="horizontal"
+        android:progress="0"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:indeterminateAnimationType="disjoint"
+        app:indicatorColor="@android:color/holo_blue_bright"
+        app:indicatorSize="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/progressWaterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/progressIndicatorWater"
+        app:layout_constraintEnd_toEndOf="@+id/progressIndicatorWater"
+        app:layout_constraintStart_toStartOf="@+id/progressIndicatorWater"
+        app:layout_constraintTop_toTopOf="@+id/progressIndicatorWater"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/progressEnergyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/progressIndicatorEnergy"
+        app:layout_constraintEnd_toEndOf="@+id/progressIndicatorEnergy"
+        app:layout_constraintStart_toStartOf="@+id/progressIndicatorEnergy"
+        app:layout_constraintTop_toTopOf="@+id/progressIndicatorEnergy"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressIndicatorEnergy"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
+        android:indeterminate="false"
+        android:max="120"
+        android:orientation="horizontal"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:indeterminateAnimationType="disjoint"
+        app:indicatorColor="@android:color/holo_orange_light"
+        app:indicatorSize="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Welcome back!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dailyUsageText"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="You've used XL of water and YkWh of energy today."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressIndicatorWater" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="337dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyUsageText"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/weeklyUsageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Your total weekly consumption is ZL and TkWh."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

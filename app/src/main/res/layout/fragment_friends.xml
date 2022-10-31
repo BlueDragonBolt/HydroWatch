@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.friends.FriendsFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <!--
+            In the above cardview widget
+            cardelevation property will give elevation to your card view
+            card corner radius will provide radius to your card view
+            card background color will give background color to your card view
+            card max elevation will give the cardview maximum elevation
+            card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+            card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+            below are the two widgets imageview and text view we are displaying inside our card view.
+            -->
+
+            <ImageView
+                android:id="@+id/img_mark"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:contentDescription="Mark"
+                android:src="@mipmap/person_1_round" />
+
+            <TextView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Bartel"
+                android:textColor="@color/Dedede"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewBartelUsed"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Water used this month: 107L Energy used this month: 15kWh"
+                android:textColor="@color/Dedede"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <!--
+            In the above cardview widget
+            cardelevation property will give elevation to your card view
+            card corner radius will provide radius to your card view
+            card background color will give background color to your card view
+            card max elevation will give the cardview maximum elevation
+            card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+            card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+            below are the two widgets imageview and text view we are displaying inside our card view.
+            -->
+
+            <ImageView
+                android:id="@+id/imgStacy"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:contentDescription="Mark"
+                android:src="@mipmap/person_2_round" />
+
+            <TextView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Anika"
+                android:textColor="@color/Dedede"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAnikaUsed"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Water used this month: 153L Energy used this month: 19kWh"
+                android:textColor="@color/Dedede"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/purple_500"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <!--
+            In the above cardview widget
+            cardelevation property will give elevation to your card view
+            card corner radius will provide radius to your card view
+            card background color will give background color to your card view
+            card max elevation will give the cardview maximum elevation
+            card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+            card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+            below are the two widgets imageview and text view we are displaying inside our card view.
+            -->
+
+            <ImageView
+                android:id="@+id/imgMarit"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:contentDescription="Renet"
+                android:src="@mipmap/person_3_round" />
+
+            <TextView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Marit"
+                android:textColor="@color/Dedede"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewMaritUsed"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Water used this month: 171L Energy used this month: 24kWh"
+                android:textColor="@color/Dedede"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <!--
+            In the above cardview widget
+            cardelevation property will give elevation to your card view
+            card corner radius will provide radius to your card view
+            card background color will give background color to your card view
+            card max elevation will give the cardview maximum elevation
+            card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+            card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+            below are the two widgets imageview and text view we are displaying inside our card view.
+            -->
+
+            <ImageView
+                android:id="@+id/imgCas"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:contentDescription="Cas"
+                android:src="@mipmap/person_4_round" />
+
+            <TextView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Cas"
+                android:textColor="@color/Dedede"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCasUsed"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Water used this month: 222L Energy used this month: 33kWh"
+                android:textColor="@color/Dedede"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
